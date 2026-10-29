@@ -1,0 +1,10 @@
+[package]
+name = "enigma-seal"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = { version = "0.11.1", features = ["getrandom"] }
+clap = { version = "4.6.7", features = ["derive"] }
+enigma = { version = "0.1.0", path = "../enigma-host" }
+rpassword = "7.5.4"
